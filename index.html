@@ -13,23 +13,33 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     .omelette-image{
-      width:95vw;
+      width:95%;
       height: 50vh;
       background: url('./assets/images/image-omelette.jpeg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      margin: 0% auto;
       border-radius: 8px;
+      margin: auto;
+    }
+
+    body{
+      background-color:  hsl(30, 54%, 90%);
+    }
+    .container{
+      background-color: hsl(0, 0%, 100%);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      padding: 0.5rem;
     }
   </style>
 </head>
 <body>
-  <div class="omelette-image">
-
-  </div>
 
   <div class="container">
+    <div class="omelette-image"></div>
     <h1>Simple Omelette Recipe</h1>
 
     <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
