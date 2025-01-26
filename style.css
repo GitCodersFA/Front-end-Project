@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-top:30px}
     .attribution a { color: hsl(228, 45%, 44%); }
 
     :root{
       --headingColor: hsl(14, 45%, 36%);
       --containerColor:hsl(0, 0%, 100%);
       --bgColor: hsl(30, 54%, 90%);
+      --lineColor:rgba(162, 161, 161, 0.333);
     }
 
     .omelette-image{
@@ -59,15 +60,16 @@
 
     .line{
       display: block;
-      background-color: rgba(162, 161, 161, 0.333);
+      background-color: var(--lineColor);
       height: 1px;
     }
 
     table{
       border-collapse: collapse;
     }
+
     tr{
-      border-bottom: 2px solid black;
+      border-bottom: 1px solid var(--lineColor);
     }
      li b{
       font-weight: 500;
@@ -76,4 +78,8 @@
     .table-row b{
       font-weight: 600;
       color:var(--headingColor);
+    }
+
+    .table-row:last-child{
+        border:none;
     }
